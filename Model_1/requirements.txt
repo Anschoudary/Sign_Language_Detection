@@ -1,0 +1,7 @@
+
+1. Download dataset from the following link:
+    https://www.kaggle.com/datasets/grassknoted/asl-alphabet?select=asl_alphabet_test
+
+2. Unzip the dataset and set the path in the train.py file
+
+You can change the model architecture in the train.py file

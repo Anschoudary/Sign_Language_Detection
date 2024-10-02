@@ -1,0 +1,19 @@
+
+1. Download the dataset from the following link by selecting any yolo model:
+    https://public.roboflow.com/object-detection/american-sign-language-letters/1
+
+2. Unzip the model and add following command in data.yaml file:
+    path: path/to/your/dataset
+
+3. Run the following command to train the model:
+    For Colab:
+    !yolo task=detect, mode=train,  data=/content/drive/MyDrive/American_Sign_Language_Letters/data.yaml, epochs=50, imgsz=640
+    For Local Machine, run in terminal:
+    yolo task=detect, mode=train, data=path/to/your/data.yaml, epochs=50, imgsz=640
+
+4. The model will be in runs/train/weights/best.pt
+    You can Download it if you are using colab or you can find it in the same directory if you are using local machine
+
+Now you can use the trained model to detect the American Sign Language Letters.
+
+If you don't want to train the model, you can use the pre-trained model I've provided.
